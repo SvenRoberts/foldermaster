@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "C:\Users\ouweu\app.py",
+      "use": "@vercel/python",
+      "config": { "maxLambdaSize": "5mb" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/foldermaster/app.py"
+    }
+  ]
+}
